@@ -1,16 +1,13 @@
 const numbers = [1, 2, 3, 5, 6];
 
-function missing(numbers) {
+function findMissing(numbers) {
   let n = numbers.length + 1;
-
-  let total = (n * (n + 1)) / 2;
-  let sum = 0;
-
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+  let sum = (n * (n + 1)) / 2;
+  let total = 0;
+  for (i of numbers) {
+    total += i;
   }
-
-  return total - sum;
+  return sum - total;
 }
 
-console.log(missing(numbers));
+console.log(findMissing(numbers));
