@@ -16,4 +16,3 @@ const time = setInterval(() => {
     console.log("Time over!");
   }
 }, 1000);
- 
